@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"></script>
+    </head>
+    <body>
+        <nav id="nav-bar">
+          <div class="logo"> Business Events</div>
+          <input type="checkbox" id="click">
+          <label for="click" class="menu-icon">
+            <img src="https://cdn-icons-png.flaticon.com/128/1828/1828850.png">
+          </label>
+          <ul>
+            
+            <li><a href="index.htm">Bienvenido a Business Events</a></li>
+            <li><a href="eventos.htm">Eventos próximos</a></li>
+            <li><a class="active" href="preguntas.htm">Preguntas frecuentes</a></li>
+            <li><a href="sobreempresa.htm">Sobre nosotros</a></li>
+          </ul>
+        </nav>
+        <div id="preguntas" class="texto">
+            <div id="titulo-preguntas"><h3>Preguntas frecuentes</h1></div>
+            <div id="tipoPreguntas">
+                <div><a href="#preguntas-empresas">Para empresas</a></div>
+                <div><a href="#preguntas-entradas">Sobre entradas</a></div>
+            </div>
+            <div class="preguntas-respuestas">
+                <div id="preguntas-empresas" >
+                    <div>
+                        <div class="preguntas">¿En qué consiste un evento empresarial?</div>
+                        <div class="respuestas">Los eventos empresariales son actos creados por las empresas dirigidos a 
+                        otras compañías o profesionales del sector con el fin de generar acciones
+                        relacionadas con la actividad de la empresa.<br> De este modo nace un nuevo 
+                        proceso de negocio, la gestión de eventos empresariales, que se podría 
+                        definir como la práctica de incorporar la lógica empresarial en el etiquetado
+                        de eventos, la comunicación y gestión de éstos.<br>Son un gran recurso que 
+                        deben utilizar las empresas para su beneficio, un buen punto de partida 
+                        para actualizar las estrategias de negocio.<br>Por eso, las empresas 
+                        organizadoras de eventos jugamos un papel fundamental en la estrategia 
+                        de las compañías.
+                        </div>
+                    </div>
+                    <div>
+                        <div class="preguntas">¿Qué ventajas disfrutan las empresas que organizan eventos?</div>
+                        <div class="respuestas">Los principales beneficios que pueden ofrecer las empresas de eventos corporativos 
+                            de Up Spain son lo siguientes:<br>
+                            <li>Presentar estrategias y presentación de productos y servicios.</li>
+                            <li>Dar a conocer a la empresa y su filosofía, en otras palabras generar Branding.</li>
+                            <li>Fortalecer la cohesión de la empresa.</li>
+                            <li>Conocimiento del público objetivo.</li>
+                            <li>Mejorar la comunicación entre las partes interesadas.</li>   
+                            En definitiva, dentro de eventos empresariales se pueden desarrollar diferentes acciones, todas ellas 
+                            vinculadas al tipo de evento corporativo seleccionado. Nosotros lo hacemos posible.
+                        </div>
+                    </div>
+                    <div>
+                        <div class="preguntas">¿Qué pasos hay que seguir para organizar un evento?</div>
+                        <div class="respuestas">Tú nos das un objetivo y nosotros nos encargamos del resto. Te ayudamos para que puedas 
+                            organizar un evento corporativo perfecto.<br><br><strong>Presupuesto</strong><br>
+                            Para organizar eventos corporativos es necesario tener un presupuesto.  Cada acción debe estar presupuestada 
+                            para tener un verdadero equilibrio de los gastos finales. La creación de un evento corporativo no debe ser un 
+                            proceso que nos haga perder dinero. Te asesoramos.<br><br><strong>Planificación del evento</strong><br>La 
+                            planificación del evento será la carta de presentación  hacia el público objetivo. Actividades, tareas necesarias
+                            que inciten la curiosidad y tengan un ritmo y temática vinculante con el tema principal del evento. Cuidamos todos 
+                            los detalles.<br><br><strong>Ejecución del evento</strong><br>Una buena publicidad del evento es fundamental. Además, 
+                            la organización del evento ha de seguir su programación, es necesario ser fieles al cronograma para seguir cada 
+                            paso programado. Nos encargamos de todo.
+                        </div>
+                    </div>
+                    <div>
+                        <div class="preguntas"></div>
+                        <div class="respuestas"></div>
+                    </div>
+                </div>
+                <div id="preguntas-entradas">
+                    <div>
+                        <div class="preguntas">¿Se puede rembolsar la cuantía del ticket del evento?</div>
+                        <div class="respuestas">Puedes acceder a este link para solicitar tu rembolso si lo solicitas como 
+                        máximo 3 días antes del evento o si tu evento se ha cancelado sin posibilidad de 
+                        posponerlo tras 30 días.
+                        </div>
+                    </div>
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form action="/my-handling-form-page" method="post" id="formulario-contacto">
+            <div>
+                <div id="formulario1">
+                    <h1>¿Quieres saber más ?</h1>
+                    <p>Rellena el formulario y nosotros nos pondremos en contacto contigo.</p>
+                </div>
+                <div id="formulario2">
+                    <div>
+                        <div>
+                            <div>
+                                <label for="bussines-name">Nombre de empresa</label>
+                                <input type="text" id="bussines-name" name="bussines">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div>
+                        <div id="desplegable-num-empleados">
+                            
+                                <label for="empleados">Número de empleados:</label>
+                                <select class="form-control" id="empleados">
+                                  <option value="">- Seleccionar -</option>
+                                  <option value="1">0-300</option>
+                                 <option value="2">300-600</option>
+                                 <option value="3">+600</option>
+                               </select>
+                           
+                        </div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="user_name">
+                        </div>
+                        <div>
+                            <label for="apellidos">Apellidos</label>
+                            <input type="text" id="apellidos" name="user_name">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="telefono">Número de teléfono</label>
+                            <input type="text" id="telefono" name="user_phone">
+                        </div>
+                        <div>
+                            <label for="mail">Correo electrónico</label>
+                            <input type="email" id="mail" name="user_mail">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" id="aceptar-rpg">
+                        <label>Acepto facilitar mis datos con la finalidad de recibir respuesta a mi solicitud de información.</label>
+                        
+                    </div>
+                    <div id="protecciondatos">
+                        <div>
+                            INFORMACIÓN BÁSICA SOBRE PROTECCIÓN DE DATOS
+                        </div>
+                        <div>
+                            <p> RESPONSABLE: Angie Valeria Mercado Rojas España S.A.U. DATOS DE CONTACTO DPD: protecciondatos@BusinessEvent.com 
+                                FINALIDAD: Gestión de la prestación de servicios a empleados. LEGITIMACIÓN: Ejecución de un contrato. 
+                                Consentimiento del interesado. Cumplimiento legal. Interés legítimo de la Entidad. 
+                                DESTINATARIOS: Compañía de producción de tarjetas. Administraciones públicas. Proveedor de Mantenimiento informático. 
+                                Todos ellos en UE. DERECHOS: acceso, rectificación, supresión, limitación, oposición y portabilidad. 
+                                PROCEDENCIA: Parte de su información será suministrada por su empresa.</p>
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <button type="submit">Solicitar información</button>
+                    </div>
+                </div>
+                
+            </div>
+        </form>
+    </body>  
+</html>
