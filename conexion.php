@@ -2,11 +2,6 @@
 	//CAMBIAR LO DE ABAJO CON INDEX.HTM ==================================
 	<?php
 	require_once 'pdoconfig.php';
-	try {
-		$conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
-		echo "Connected to $dbname at $host successfully.";
-		insertar($conexion);
-
 	function insertar ($conexion) {
 		
 		$nombre = $_POST['name'];
@@ -23,7 +18,13 @@
 
 
 		$consulta = "INSERT INTO Empresas () VALUES ($nombre,$apellidos,$numero,$email
-		,$desplegable_sala, $duracion_evento, $patrocinador, $artista, $trabajadores, $aceptar_rpg)"
+		,$desplegable_sala, $duracion_evento, $patrocinador, $artista, $trabajadores, $aceptar_rpg)";
+	}
+	try {
+		$conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+		echo "Connected to $dbname at $host successfully.";
+		insertar($conexion);
+
 	
 	} catch (PDOException $pe) {
 		die("Could not connect to the database $dbname :" . $pe->getMessage());
