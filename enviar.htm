@@ -7,19 +7,29 @@
   </head>
   <body>
     <nav id="nav-bar">
-        <div class="logo">Grupo Gesmar</div>
-        <input type="checkbox" id="click">
-        <label for="click" class="menu-icon">
-          <img src="https://cdn-icons-png.flaticon.com/128/1828/1828850.png">
-        </label>
-        <ul>
-          
-          <li><a href="index.htm">Bienvenido a Gesmar</a></li>
-          <li><a href="eventos.htm">Eventos próximos</a></li>
-          <li><a class="active" href="preguntas.htm">Preguntas frecuentes</a></li>
-          <li><a href="sobreempresa.htm">Sobre nosotros</a></li>
-        </ul>
-      </nav>
+      <div class="logo"> Grupo Gesmar</div>
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-icon">
+        <img src="https://cdn-icons-png.flaticon.com/128/1828/1828850.png">
+      </label>
+      <ul>
+        
+        <li><a class="active" href="index.htm">Bienvenido a Gesmar</a></li>
+        <li><a href="eventos.htm">Eventos próximos</a></li>
+        <li><a href="preguntas.htm">Preguntas frecuentes</a></li>
+        <li><a href="sobreempresa.htm">Sobre nosotros</a></li>
+      </ul>
+      
+    </nav>
+    <div id="ventana-modal">
+        <input id="mostrar-modal" name="modal" type="radio" /> 
+        <label for="mostrar-modal"> Ver modal </label>
+        <input id="cerrar-modal" name="modal" type="radio" /> 
+        <label for="cerrar-modal"> X </label> 
+        <p>Tus datos han sido registrados, exitosamente. Te contactarán pronto.</p>
+
+    </div>
+    
      <div id="welcome-section" class="texto">
       <div id="presentacion">
             <div id="seccion1">
@@ -81,8 +91,7 @@
                 
 
                 <div>
-                    <div id="desplegable_sala">
-                        <select>
+                    <div id="desplegable_horas">
                               <option value="1">2</option>
                               <option value="2">3</option>
                               <option value="3">4</option>
@@ -115,16 +124,30 @@
                         <input type="text" id="artista" name="artista">
                     </div>
                 </div>
-              
+                 <!-- <div> 
+                     <div id="desplegable_rentabilidad"> 
+                        
+                            <label for="beneficio"> Beneficio requerido aproximado</label>
+                            <select class="form-control" id="beneficio">
+                              <option value="">- Seleccionar -</option>
+                              <option value="1">2.5%</option>
+                              <option value="2">3%</option>
+                              <option value="3">5%</option>
+                              <option value="4">7%</option>
+                              <option value="5">10%</option>
+                              <option value="6">15%</option>
+                              <option value="7">18%</option>
+                              <option value="8">20%</option>
+                             
+                           </select>
+                       
+                    </div>
+                    
+                </div>-->
                 <div>
                     <div>
                         <label for="trabajadores">¿Necesita contratar trabajadores?</label>
-                        <select class="form-control" id="trabajadores">
-                            <option value="">- Seleccionar -</option>
-                            <option value="1">Si</option>
-                            <option value="2">No</option>
-                           
-                         </select>
+                        <input type="text" id="trabajadores" name="trabajadores">
                     </div>
                 </div>
                 <div>
