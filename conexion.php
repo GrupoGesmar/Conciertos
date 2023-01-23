@@ -17,7 +17,7 @@
 		$asunto = 'Formulario Rellenado';
 
 
-		$consulta = "INSERT INTO Empresas () VALUES ($nombre,$apellidos,$numero,$email
+		$consulta = "INSERT INTO recoger_datos () VALUES ($nombre,$apellidos,$numero,$email
 		,$desplegable_sala, $duracion_evento, $patrocinador, $artista, $trabajadores, $aceptar_rpg)";
 	}
 	try {

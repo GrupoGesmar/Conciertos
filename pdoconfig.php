@@ -1,6 +1,6 @@
 <?php
     $host = 'localhost';
-    $dbname = 'Empresas';
-    $username = '';
+    $dbname = 'rpa - paginaweb';
+    $username = 'root';
     $password = '';
     ?>
