@@ -1,6 +1,11 @@
 
 	//CAMBIAR LO DE ABAJO CON INDEX.HTM ==================================
+	<!DOCTYPE html>
+	<html>
+	<head></head>
+	<body>
 	<?php
+	use function CommonMark\Render\HTML;
 	require_once 'pdoconfig.php';
 	function insertar ($conexion) {
 		
@@ -24,15 +29,11 @@
 		$conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
 		echo "Connected to $dbname at $host successfully.";
 		insertar($conexion);
-
+		
 	
 	} catch (PDOException $pe) {
 		die("Could not connect to the database $dbname :" . $pe->getMessage());
 	}
-
-	
-	
-
-	
-	
  ?>
+<a href="index.htm"></body>
+ </html>
