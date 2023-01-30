@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"></script>
+  </head>
+  <body>
+    <nav id="nav-bar">
+      <div class="logo"> Grupo Gesmar</div>
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-icon">
+        <img src="https://cdn-icons-png.flaticon.com/128/1828/1828850.png">
+      </label>
+      <ul>
+        
+        <li><a class="active" href="index.htm">Bienvenido a Gesmar</a></li>
+        <li><a href="eventos.htm">Eventos próximos</a></li>
+        <li><a href="preguntas.htm">Preguntas frecuentes</a></li>
+        <li><a href="sobreempresa.htm">Sobre nosotros</a></li>
+      </ul>
+      
+    </nav>
+    <div id="ventana-modal">
+        <input id="mostrar-modal" name="modal" type="radio" /> 
+        <label for="mostrar-modal"> Ver modal </label>
+        <input id="cerrar-modal" name="modal" type="radio" /> 
+        <label for="cerrar-modal"> X </label> 
+        <p>Tus datos han sido registrados, exitosamente. Te contactarán pronto.</p>
+
+    </div>
+    
+     <div id="welcome-section" class="texto">
+      <div id="presentacion">
+            <div id="seccion1">
+                <h1>¿Tienes algo importante que contar a tus ampleados, colaboradores o clientes?</h1>
+            </div>
+            <div id="seccion2">
+                <p>Un evento es la manera más eficaz de involucrarles, y de hacer llegar ese mensaje 
+                    de forma directa y memorable.<br><strong>Convierte tus mensajes en experiencias</strong></br></p>
+            </div>
+            <div id="seccion3">
+                <a  id="boton-info"  href="#formulario-contacto">Solicita información para organizar un concierto</a>
+            </div>
+      </div>
+      <div id="seccionfoto">
+        <img id="foto-presentacion" src="\recursos\carnival-g8be17d934_1280.jpg">
+        
+      </div>
+
+     
+    </div>
+
+    <div id="calendar">
+             
+        <iframe  src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%234285F4&ctz=Europe
+        %2FMadrid&showTitle=0&showPrint=0&showTabs=1&showCalendars=0&mode=WEEK&src=Z3J1cG8xdWlwYXRoQGdtYWlsLmNvbQ&color=%23039BE5" 
+        style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no" background-color="#FF5F40"></iframe>
+       
+      </div>
+    <form action="conexion.php" method="post" id="formulario-contacto">
+        <div>
+            <div id="formulario1">
+                <h1>¿Quieres saber más ?</h1>
+                <p>Rellena el formulario y nosotros nos pondremos en contacto contigo.</p>
+            </div>
+            <div id="formulario2">
+                
+                
+                
+                <div>
+                    <div>
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="user_name">
+                    </div>
+                    <div>
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" id="apellidos" name="user_surname">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="telefono">Número de teléfono</label>
+                        <input type="text" id="telefono" name="user_phone">
+                    </div>
+                    <div>
+                        <label for="mail">Correo electrónico</label>
+                        <input type="email" id="email" name="user_mail">
+                    </div>
+                </div>
+                
+
+                <div>
+                    <div id="desplegable_horas">
+                              <option value="1">2</option>
+                              <option value="2">3</option>
+                              <option value="3">4</option>
+                              <option value="4">5</option>
+                              <option value="5">6</option>
+                              <option value="6">+7 horas</option>
+                             
+                           </select>
+                       
+                    </div>
+                    
+                </div>
+                <div>
+                    <div id="desplegable_patrocinador">
+                        
+                            <label for="patrocinador">¿Tiene patrocinador?:</label>
+                            <select class="form-control" id="salas">
+                              <option value="">- Seleccionar -</option>
+                              <option value="1">Si</option>
+                              <option value="2">No</option>
+                             
+                           </select>
+                       
+                    </div>
+                    
+                </div>
+                <div>
+                    <div>
+                        <label for="artista">Artista</label>
+                        <input type="text" id="artista" name="artista">
+                    </div>
+                </div>
+                 <!-- <div> 
+                     <div id="desplegable_rentabilidad"> 
+                        
+                            <label for="beneficio"> Beneficio requerido aproximado</label>
+                            <select class="form-control" id="beneficio">
+                              <option value="">- Seleccionar -</option>
+                              <option value="1">2.5%</option>
+                              <option value="2">3%</option>
+                              <option value="3">5%</option>
+                              <option value="4">7%</option>
+                              <option value="5">10%</option>
+                              <option value="6">15%</option>
+                              <option value="7">18%</option>
+                              <option value="8">20%</option>
+                             
+                           </select>
+                       
+                    </div>
+                    
+                </div>-->
+                <div>
+                    <div>
+                        <label for="trabajadores">¿Necesita contratar trabajadores?</label>
+                        <input type="text" id="trabajadores" name="trabajadores">
+                    </div>
+                </div>
+                <div>
+                    <input type="checkbox" id="aceptar-rpg">
+                    <label>Acepto facilitar mis datos con la finalidad de recibir respuesta a mi solicitud de información.</label>
+                    
+                </div>
+                <div id="protecciondatos">
+                    <div>
+                        INFORMACIÓN BÁSICA SOBRE PROTECCIÓN DE DATOS
+                    </div>
+                    <div>
+                        <p> RESPONSABLE: Angie Valeria Mercado Rojas España S.A.U. DATOS DE CONTACTO DPD: protecciondatos@BusinessEvent.com 
+                            FINALIDAD: Gestión de la prestación de servicios a empleados. LEGITIMACIÓN: Ejecución de un contrato. 
+                            Consentimiento del interesado. Cumplimiento legal. Interés legítimo de la Entidad. 
+                            DESTINATARIOS: Compañía de producción de tarjetas. Administraciones públicas. Proveedor de Mantenimiento informático. 
+                            Todos ellos en UE. DERECHOS: acceso, rectificación, supresión, limitación, oposición y portabilidad. 
+                            PROCEDENCIA: Parte de su información será suministrada por su empresa.</p>
+                    </div>
+                    
+                </div>
+                <div>
+                    <button type="submit">Solicitar información</button>
+                </div>
+            </div>
+            
+        </div>
+    </form>
+  </body>
+</html>

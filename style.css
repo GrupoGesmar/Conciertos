@@ -1,0 +1,683 @@
+/***************PALETA DE COLORES*********************/
+
+
+body {
+  --turquesaoscuro:#24A19C;
+  --turquesaclaro:#6EBFB5;
+  --rosapalo:#FFC7C7;
+  --naranja:#FF5F40;
+  --blanco:#FFF;
+  --amarilloclaro:rgba(250, 219, 171, 0.859);
+
+
+    text-decoration-color: rgb(70, 92,89);
+    background-color: var(--blanco);
+    box-sizing: border-box;
+    color: rgb(70, 92, 89);
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400px;
+    height: 800.885px;
+    line-height: 24px;
+    overflow-wrap:break-word;
+    text-size-adjust: 100%;
+    width: 100%;
+    margin-top: 0%;
+    margin-left: 0%;
+}
+h1, h2, h3 {
+  color: var(--naranja);
+  
+}
+div.texto {
+  margin-left: 205.773px;
+  margin-right: 205.773px;
+  max-width: 1140px;
+  
+
+}
+/**************************INICIO BARRA DE NAVEGACIÓN********************************/
+nav {
+  width: 100%;
+    font-family: 'Pacifico', cursive;
+    height: 80px;
+    background:linear-gradient(22deg, rgba(215,217,64,1) 0%, rgba(228,104,172,1) 35%, rgba(0,212,255,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 60px 0px 110px;
+  }
+  nav .logo {
+    font-size: 33px;
+    color: var(--blanco);
+    font-weight: 600;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  nav ul li {
+    margin: 0px 5px;
+    
+  }
+  nav ul li a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  nav ul li a:hover{
+     color: var(--naranja);
+    background: var(--blanco);
+  }
+  nav ul li a.active {
+    color: var(--blanco);
+    background:var(--naranja);
+  }
+  
+  nav .menu-icon img{
+    color: var(--blanco);
+    width: 30px;
+    cursor: pointer;
+    display: none;
+  }
+  #click {
+    display: none;
+  }
+  /**************************FIN BARRA DE NAVEGACIÓN********************************/
+  
+ /*******************************INICIO FOOTER*************************************/
+footer {
+  font-family: 'Pacifico', cursive;
+  height: 80px;
+  width: 100%;
+  background:linear-gradient(22deg, rgba(215,217,64,1) 0%, rgba(228,104,172,1) 35%, rgba(0,212,255,1) 100%);
+  color:var(--blanco);
+  /*display: flex;*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 60px 0px 110px;
+}
+ /*******************************FIN FOOTER*************************************/
+
+  /**************************INICIO SECCION DE PRESENTACIÓN********************************/
+  #welcome-section {
+    box-sizing: border-box;
+    color: rgb(70, 92,89);
+    display: flex;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    height: 545.882px;
+    line-height: 24px;
+    overflow-wrap: break-word;
+    text-size-adjust: 100%;
+    width: 1139.99px;
+}
+#presentacion {
+    box-sizing: border-box;
+    color: rgb(70, 92,89);
+    display: flex;
+    flex-direction: column;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    height: 545.882px;
+    justify-content: center;
+    line-height: 24px;
+    margin-left: 0px;
+    min-height:1px ;
+    overflow-wrap: break-word;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-size-adjust: 100%;
+    width: 652.807px;
+}
+  #foto-presentacion{
+      /*background-image:url("https://images.pexels.com/photos/1708936/pexels-photo-1708936.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+     */
+     
+     background-size: 417.942px;
+     aspect-ratio: auto 700/715;
+     box-sizing: border-box;
+     border-radius: 50%;
+     /*color: rgb(70, 92,89);*/
+     display: inline;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 400px;
+     height: 427.066px;
+     line-height: 24px;
+     max-width: 100%;
+     overflow-wrap: break-word;
+     text-size-adjust: 100%;
+     width: 417.942px;
+  }
+  #seccion-foto{
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+     font-size: 16px;
+     font-style: normal;
+     text-size-adjust: 100%;
+     display: flex;
+  }
+  /**************************FIN DE SECCION DE PRESENTACIÓN********************************/
+
+
+  /**************************BOTON PRESENTACIÓN********************************/
+#boton-info{
+    color: rgb(250, 249, 248);
+    background: var(--turquesaoscuro);
+}
+#boton-info:hover{
+    color: #1b1b1b;
+   background: #fff;
+ }
+ #boton-info.active {
+   color: #1b1b1b;
+   background: #fff;
+ }
+  /**************************FIN BOTON PRESENTACIÓN********************************/
+
+  /**************************VENTANA MODAL DE ENVIO DE FORMULARIO********************************/
+#ventana-modal{
+  
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    position: fixed;
+    transition: all .5s;
+    width: 60%;
+    height: 40%;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    font-size: 1.5em;
+    text-align: center;
+  
+}
+#mostrar-modal {
+  display: none;
+}
+#mostrar-modal + label {
+  background: steelblue;
+  display: table;
+  margin: auto;
+  color: #fff;
+  line-height: 3;
+  padding: 0 1em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+#mostrar-modal + label:hover {
+  background: #38678f;
+}
+#mostrar-modal:checked ~ #modal {
+  top: 0;
+}
+#cerrar-modal {
+  display: none;
+}
+#cerrar-modal + label {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  z-index: 100;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  background: tomato;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 50%;
+  transition: all .5s;
+}
+#cerrar-modal:checked ~ #modal {
+  top: -100vh;
+}
+#cerrar-modal + label {
+  display: none;
+}
+#mostrar-modal:checked ~ #cerrar-modal + label {
+  display: block;
+}
+#cerrar-modal:checked + label {
+  display: none;
+}
+  /**************************VENTANA MODAL DE ENVIO DE FORMULARIO********************************/
+    /**************************FORMULARIO********************************/
+  #formulario-contacto{
+    background-color: var(--rosapalo);
+    box-sizing: border-box;
+    color: rgb(70, 92, 89);
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    height: 600.55px;
+    line-height: 24px;
+    overflow-wrap: break-word;
+    text-size-adjust: 100%;
+    padding: 5%;
+   
+  }
+  #fotmulario {
+    width: 100%;
+  }
+  #formulario1{
+      text-align: center;
+      float: left;
+      /*height: 229.489px;*/
+      margin-left: 0px;
+      min-height: 1px;
+      padding-top: 10%;
+      padding-bottom: 10%;
+      padding-left: 20px;
+      padding-right: 20px;
+      width: 50%;
+  }
+  #formulario1.h1{
+      font-size: 42px;
+      font-weight: 800;
+      box-sizing: border-box;
+      margin-block-end: 24px;
+      margin-block-start: 0px;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      text-size-adjust: 100%;
+  }
+  #formulario2{
+      opacity: 0.6;
+      background-color: var(--blanco);
+      float: right;
+      box-shadow: 5px 5px 15px;
+      margin-top: 0px;
+      width: 50%;
+      padding: 5%;
+      text-align: center;
+     
+  }
+  #QR {
+    text-align: center;
+  }
+  input[type=text], input[type=mail]{
+      width: 100%;
+  }
+
+  #protecciondatos {
+      font-size: 8px;
+      text-size-adjust: 100%;
+      text-align: justify;
+  }
+    /**************************FIN FORMULARIO********************************/
+/**************************CALENDARIO********************************/
+    #calendar {
+      float: flex;
+      padding-right: 30%;
+      padding-left: 30%;
+      padding-bottom: 10%;
+      padding-top: 10%;
+      }
+      #calendar2{
+        float: flex;
+        padding-right: 30%;
+        padding-left: 15%;
+        padding-bottom: 10%;
+        padding-top: 10%;
+      }
+/**************************FIN CALENDARIO********************************/
+    /****************************PREGUNTAS**********************************/
+    #preguntas {
+        margin: 45px;
+        padding-top: 15px;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-bottom: 20px;
+        
+    }
+    #titulo-preguntas{
+        text-align: center;
+        font-size: 40px;
+        padding: 5%;
+        font-weight: bold;
+    }
+    div.preguntas {
+        font-size: 20px;
+        text-align: left;
+        font-weight: bold;
+        margin: 5px;
+        margin-top: 10px;
+        color: var(--turquesaclaro);
+    }
+    div.preguntas-respuestas{
+        background-color: rgb(255, 244, 231);
+        padding: 40px;
+        
+    }
+    
+    
+/****************************FIN PREGUNTAS**********************************/
+
+
+/****************************EVENTOS**********************************/
+#pagina-eventos {
+display: flex;
+overflow-wrap: break-word;
+-ms-flex-align: center;
+
+}
+.titulo-eventos {
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+ol li a h3{
+  color: var(--blanco);
+}
+
+.boton-comprar {
+  display: inline-block;
+  padding: 5px 15px;
+  line-height: normal;
+  letter-spacing: normal;
+  letter-spacing: .3em;
+  border: 1px solid ;
+  font-size: 11px;
+  position: static;
+  background-color: var(--blanco);
+  }
+  .boton-comprar:hover {
+    background-color: var(--naranja);
+  }
+.lista-eventos {
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+  height: 900px;
+  /*border: 3px solid black ;*/
+}
+
+.eventos {
+  box-sizing: border-box;
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 50%;
+    overflow-wrap: break-word;
+    /*padding-left: 10%;
+    padding-right: 10%;*/
+    color: black;
+  }
+ 
+ol{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 200px;
+}
+li{
+  display: list-item;
+  
+}
+ol , ul {
+  box-sizing: border-box;
+}
+
+.eventos, .evento {
+  position: relative;
+  margin: 0;
+}
+.lista-eventos, .evento {
+  position: relative;
+  padding: 8px,10px,8px,80px;
+  margin: 0;
+  border-bottom: 1px solid;
+  background-color: var(--turquesaclaro);
+}
+.eventos, .fecha-eventos {
+  width: 600px;
+  padding-top: 19px;
+}
+.lista-eventos, .fecha-eventos {
+  position: absolute;
+  height: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  line-height: normal;
+  text-align: center;
+  transition: .18s ease;
+  
+}
+.lista-eventos, .evento:hover, .fecha-eventos {
+  background-color: var(--blanco);
+}
+.lista-eventos, .fecha-eventos, span {
+  display: block;
+  color: black;
+  position: relative;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+
+/****************************EVENTOS**********************************/
+
+/****************************TICKETS**********************************/
+#informacion{
+  float: right;
+  flex-direction: column;
+  width: 40%;
+  margin-right: 15%;
+  
+}
+#localiza-ticket{
+  background-color:  var(--turquesaoscuro);
+  padding: 40px;
+  color: #fff;
+  float: flex;
+  padding-bottom: 10%;
+  
+  margin-left: 15%;
+}
+
+/****************************FIN TICKETS**********************************/
+/****************************VENTA TICKETS**********************************/
+.ventaEntradas {
+  text-align: center;
+  margin: 15%;
+  width: 80%;
+  
+}
+.ventaEntradas.div.h2 {
+  padding: 5%;
+  text-align: center;
+}
+.tipoEntradas {
+  display: grid;
+  grid-template-columns:auto auto auto;
+  margin: 15%;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  
+}
+.EntradaPrecio {
+ 
+  flex-direction: row;
+  margin: 10%;
+  text-align: justify;
+}
+/****************************FIN VENTA TICKETS**********************************/
+/****************************SOBRE EMPRESA**********************************/
+#sobreempresa {
+float: flex;
+}
+#texto-empresa{
+  float: left;
+  width:50%;
+  margin-right: 20px;
+  margin-top: 45px;
+  background-color: var(--blanco);
+  box-sizing: border-box;      
+ 
+}
+#foto-eventos{
+float: right;
+width: 40%;
+margin: 30px;
+margin-top: 50px;
+box-shadow: 5px 5px 10px;
+box-sizing: border-box;  
+
+}
+
+
+/****************************FIN SOBRE EMPRESA**********************************/
+
+/****************************PASARELA DE PAGO**********************************/
+#imagen-credit-card{
+  float: flex;
+  width: 550px;
+  margin: 0px,0px,0px,0px;
+  
+  box-shadow: 5px 5px 10px;
+  
+}
+
+
+.form-container {
+  padding: 60px 0;
+  background-color: var(--turquesaclaro);
+  margin: 0 auto;
+  width: 600px; ;
+}
+#pasarelapago {
+  padding: 0 20px 30px 20px;
+  font-family: "Roboto";
+  font-size: 1em;;
+  text-align: center;
+  line-height: 1.2em;
+  background-image: url(https://d7lju56vlbdri.cloudfront.net/var/ezwebin_site/storage/images/_aliases/img_1col/reportajes/cuando-volveremos-a-ir-a-conciertos-con-normalidad/8867610-2-esl-MX/Cuando-volveremos-a-ir-a-conciertos-con-normalidad.png);
+}
+.form-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-wrapper {
+  background-color: var(--amarilloclaro);
+  width: 100%;
+  display: flex;
+
+}
+.personal-information {
+  background-color: var(--amarilloclaro);
+  padding: 1px 0;
+  text-align: center;
+}
+.form-container.h1{
+  font-size: 1.3em;
+  font-family: "Roboto"
+}
+.form-container.input {
+  margin: 1px 0;
+  padding-left: 3%;
+  font-size: 14px;
+}
+f.orm-container.input[type="text"]{
+  display: block;
+  height: 50px;
+  width: 97%;
+  border: none;
+}
+.form-container.input[type="email"]{
+  display: block;
+  height: 50px;
+  width: 97%;
+  border: none;
+}
+.form-container.input[type="submit"]{
+  display: block;
+  height: 60px;
+  width: 100%;
+  border: none;;
+  color: #fff;
+  margin-top: 2px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+.form-container.input[type="submit"]:hover{
+  background-color: #6FB7E9;
+  transition: 0.3s ease;
+}
+#column-left{
+  width: 46.5%;
+  float: left;
+  margin-bottom: 2px;
+}
+#column-right {
+  width: 46.5%;
+  float: right;
+}
+
+@media only screen and (max-width: 480px){
+  .form-container.body {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .form-container {
+    margin: 0 2%;
+  }
+  .form-container.input{
+    font-size: 1em;
+  }
+  #input-button {
+    width: 100%;
+  }
+ #input-field {
+    width: 96.5%;
+  }
+  .form-container.h1{
+    font-size: 1.2em;
+  }
+  .form-container.input {
+    margin: 2px 0;
+  }
+  .form-container.input[type="submit"]{
+    height: 50px;
+  }
+  #column-left {
+    width: 96.5%;
+    display: block;
+    float: none;
+  }
+  #column-right {
+    width: 96.5%;
+    display: block;
+    float: none;
+  }
+}

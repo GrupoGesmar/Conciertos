@@ -1,0 +1,11 @@
+<li Class="evento" >
+                  <a>
+                    <time Class="fecha-eventos"></time>
+                    <span Class="dia">dia</span>
+                    <span Class="year">year</span>
+                    <h3>sala, Madrid, España</h3>
+                    <h2>artista</h2>
+                    <h3>CONCIERTO</h3>
+                  </a>
+                  <a Class=“ boton-comprar” href="pasarelapago.htm" >COMPRAR</a>
+</li>
